@@ -1,48 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+
+    <title>Ulìa - Blog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-lava.css">
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
-    <style>
-        /* Add some basic styling for the modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-            padding-top: 60px;
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover, .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+
+    <!-- Il tuo CSS personalizzato -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div id="preloader">
@@ -59,107 +39,232 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
+    <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
                             <img src="assets/images/logo.svg" alt="">
                         </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
                             <li class="scroll-to-section"><a href="#about" class="menu-item">Valori</a></li>
-                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Gelati</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Gelati</a>
+                            </li>
                             <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contatti</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
+                        <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+    <!-- ***** Header Area End ***** -->
 
-    <!-- Welcome Area Section -->
-    <section class="section" id="welcome">
-        <div class="container">
-            <div class="row">
-                <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <h1>Ulìa: il primo gelateria che racconta il salento</h1>
-                    <p>Per chi sognaiare il salento attraverso gusti che raccontano storie, utilizzando ingredienti autentici, si spinge e genialità</p>
-                </div>
-                <div class="right-image-decor"></div>
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+<div class="header-text">
+    <div class="container">
+        <div class="row">
+            <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <h1>Benvenuto nel nostro Blog</h1>
+                <h2>Scopri la Tradizione e l'Innovazione di Ulìa</h2>
+                <p>Nel nostro blog, vogliamo condividere con te la passione per il gelato, il nostro legame con il Salento e l'impegno per la sostenibilità e l'innovazione. Ogni articolo è pensato per offrirti non solo curiosità sul mondo del gelato, ma anche per farti scoprire come un semplice dessert possa raccontare storie di tradizione, qualità e creatività. Unisciti a noi in questo viaggio attraverso il gusto e la cultura del gelato!</p>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<!-- ***** Header Text End ***** -->
 
-    <!-- Blog Articles Section -->
-    <section class="section" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-item" onclick="openModal('modal1')">
-                        <h4>Article 1</h4>
-                        <p>Click to read more...</p>
-                    </div>
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+<!-- ***** Blog Section Start ***** -->
+<section id="blog" class="blog-area">
+    <div class="container center-heading">
+        <h2 class="pb-3">Il Blog di Ulìa</h2>
+        <div class="row">
+            <!-- Articolo 1 -->
+            <div class="col-md-4">
+                <div class="blog-item">
+                    <img src="https://via.placeholder.com/350x250" alt="Articolo 1" class="blog-img">
+                    <h4>Il Gelato e la Tradizione Salentina</h4>
+                    <p class="blog-excerpt">Scopri come il gelato tradizionale salentino viene preparato con ingredienti freschi e locali...</p>
+                    <button class="main-button" data-toggle="modal" data-target="#articleModal" data-title="Il Gelato e la Tradizione Salentina" data-content="
+                    <h5>Il Gelato Tradizionale Salentino</h5>
+                    <p>Il gelato salentino è una vera e propria tradizione. I nostri maestri gelatieri selezionano solo ingredienti freschi e locali, provenienti direttamente dal territorio salentino. La combinazione di sapori freschi e naturali è il cuore del nostro gelato, che racconta una storia antica fatta di sole, mare e passione.</p>
+                    <img src='https://via.placeholder.com/800x400' alt='Gelato Tradizionale' class='img-fluid'>
+                    <p>Il gelato non è solo un dessert, ma una vera e propria esperienza sensoriale che trasporta i nostri clienti nel cuore del Salento. Ogni cucchiaiata è un viaggio nei sapori autentici della nostra terra.</p>
+                    <blockquote>“Ogni ingrediente è scelto con cura per offrire il massimo della freschezza e della qualità.”</blockquote>
+                    <p>Con Ulìa, non mangi solo un gelato, ma vivi la nostra tradizione!</p>">Leggi di più</button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-item" onclick="openModal('modal2')">
-                        <h4>Article 2</h4>
-                        <p>Click to read more...</p>
-                    </div>
+            </div>
+
+            <!-- Articolo 2 -->
+            <div class="col-md-4">
+                <div class="blog-item">
+                    <img src="https://via.placeholder.com/350x250" alt="Articolo 2" class="blog-img">
+                    <h4>Innovazione nel Gelato</h4>
+                    <p class="blog-excerpt">Ulìa porta l'innovazione nel mondo del gelato, esplorando nuovi gusti e tecniche moderne...</p>
+                    <button class="main-button" data-toggle="modal" data-target="#articleModal" data-title="Innovazione nel Gelato" data-content="
+                    <h5>Innovazione e Creatività</h5>
+                    <p>Ulìa è sempre alla ricerca di nuove tecniche per innovare il mondo del gelato. Ogni stagione portiamo sul mercato nuovi gusti e creazioni che mescolano tradizione e modernità.</p>
+                    <img src='https://via.placeholder.com/800x400' alt='Innovazione Gelato' class='img-fluid'>
+                    <p>Ogni gelato che creiamo racconta una storia unica, una fusione tra il passato e il futuro. La creatività dei nostri gelatieri è il motore di ogni nuova scoperta.</p>
+                    <p>Esploriamo nuovi gusti, tecniche moderne e, soprattutto, mettiamo sempre la sostenibilità al primo posto.</p>
+                    <p>Con Ulìa, puoi assaporare l'innovazione, pur rimanendo legato alle radici della tradizione.</p>">Leggi di più</button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-item" onclick="openModal('modal3')">
-                        <h4>Article 3</h4>
-                        <p>Click to read more...</p>
-                    </div>
+            </div>
+
+            <!-- Articolo 3 -->
+            <div class="col-md-4">
+                <div class="blog-item">
+                    <img src="https://via.placeholder.com/350x250" alt="Articolo 3" class="blog-img">
+                    <h4>Gelato e Sostenibilità</h4>
+                    <p class="blog-excerpt">Il nostro impegno per l'ambiente e la sostenibilità si riflette anche nel modo in cui produciamo il nostro gelato...</p>
+                    <button class="main-button" data-toggle="modal" data-target="#articleModal" data-title="Gelato e Sostenibilità" data-content="
+                    <h5>Sostenibilità nel Gelato</h5>
+                    <p>In Ulìa, la sostenibilità è al centro del nostro processo produttivo. Utilizziamo solo ingredienti freschi e provenienti da coltivazioni sostenibili. Ogni fase della produzione è pensata per ridurre l'impatto ambientale.</p>
+                    <img src='https://via.placeholder.com/800x400' alt='Sostenibilità Gelato' class='img-fluid'>
+                    <p>La nostra filosofia si basa sul rispetto per l'ambiente. Dalla scelta delle materie prime al packaging, tutto è studiato per ridurre al minimo l'impatto ecologico.</p>
+                    <blockquote>“Il nostro gelato è un viaggio verso un futuro più sostenibile.”</blockquote>
+                    <p>Vogliamo che ogni cucchiaiata di gelato non solo soddisfi il palato, ma anche faccia sentire i nostri clienti parte di un progetto più grande: quello della sostenibilità.</p>">Leggi di più</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- ***** Blog Section End ***** -->
 
-    <!-- Modals -->
-    <div id="modal1" class="modal">
+
+<!-- ***** Modal per Articolo ***** -->
+<div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="articleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>Article 1</h2>
-            <p>Content for article 1...</p>
+            <div class="modal-header">
+                <h5 class="modal-title" id="articleModalLabel">Titolo Articolo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenuto dell'articolo -->
+                <p id="modal-content">Contenuto dell'articolo...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+            </div>
         </div>
     </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Article 2</h2>
-            <p>Content for article 2...</p>
-        </div>
-    </div>
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal3')">&times;</span>
-            <h2>Article 3</h2>
-            <p>Content for article 3...</p>
-        </div>
-    </div>
+</div>
 
 
 
-    <!-- Footer Section --><?php
-    <footer>
+     <!-- ***** Footer Start ***** -->
+    <footer id="contact-us">
         <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <!-- ***** Contact Form Start ***** -->
+                    <div class="col-lg-6 col-md-12 col-sm-12 order-2 order-md-1">
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" id="name" placeholder="Nome" required=""
+                                                style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" placeholder="E-Mail"
+                                                required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Il tuo messaggio"
+                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                                Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Form End ***** -->
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12 order-1 order-md-2">
+                        <h2>Scrivi a <em>Ulìa</em></h2>
+                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
+                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
+                            <br><br>Testo privacy policy</p>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
-                <p>© 2023 Ulìa Gelateria. All rights reserved.</p>
+                    <div class="sub-footer">
+                        <p>Testo footer | Allergeni | Privacy</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    </body>
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $('#articleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Bottone che ha attivato la modale
+            var title = button.data('title'); // Ottieni il titolo
+            var content = button.data('content'); // Ottieni il contenuto dell'articolo
+    
+            var modal = $(this);
+            modal.find('.modal-title').text(title);
+            modal.find('#modal-content').html(content);
+        });
+    </script>
+    
+
+
+</body>
 
 </html>

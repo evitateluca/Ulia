@@ -1533,3 +1533,200 @@ footer .sub-footer p {
       font-size: 14px;
   }
 }
+
+
+/* Modal customization */
+.modal-content {
+  border-radius: 15px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-header {
+  border-bottom: 2px solid #ddd;
+  background: #25402a;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px 20px;
+}
+
+.modal-header .close {
+  color: white;
+  opacity: 1;
+  font-size: 30px;
+}
+
+.modal-body {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  background: #f1f1f1;
+  padding: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #25402a;
+}
+
+/* Animazione per il modal */
+@keyframes modalEntrance {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.modal.fade .modal-dialog {
+  animation: modalEntrance 0.4s ease-in-out;
+}
+
+
+/* Pulsante nel blog */
+.blog-item .main-button {
+  background-color: #25402a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-item .main-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Pulsante nel modal */
+.btn-secondary {
+  background-color: #25402a;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
+
+
+/* Modal full width */
+.modal-dialog {
+  max-width: 90%;
+  margin: 30px auto;
+}
+
+.modal-content {
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-header {
+  background-color: #25402a;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-header .close {
+  color: white;
+  font-size: 30px;
+}
+
+.modal-body {
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.modal-footer {
+  padding: 15px;
+  text-align: center;
+  background: #f1f1f1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #25402a;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #333;
+}
+
+@keyframes modalEntrance {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.modal.fade .modal-dialog {
+  animation: modalEntrance 0.4s ease-in-out;
+}
+
+
+/* Aggiungi margini tra gli articoli per mobile */
+@media (max-width: 767px) {
+  .blog-item {
+      margin-bottom: 30px;  /* Spazio tra gli articoli */
+  }
+}
+
+/* Assicurati che le immagini siano responsivi */
+.blog-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Garantisce che l'immagine riempia il contenitore mantenendo le proporzioni */
+}
+
+/* Ottimizzazione della griglia degli articoli per dispositivi più piccoli */
+@media (max-width: 767px) {
+  .blog-area .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Allinea gli articoli al centro */
+  }
+
+  .blog-item {
+      width: 100%; /* Ogni articolo occuperà tutta la larghezza disponibile */
+  }
+}
