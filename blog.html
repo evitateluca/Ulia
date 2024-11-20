@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <style>
+        /* Add some basic styling for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="preloader-background"></div>
+        <div class="preloader-container">
+            <div class="preloader-content">
+                <div class="btm"></div>
+                <div class="ice one"></div>
+                <div class="ice two"></div>
+                <div class="logo-ice">
+                    <img src="assets/images/logo.svg" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">Valori</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Gelati</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contatti</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome Area Section -->
+    <section class="section" id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <h1>Ulìa: il primo gelateria che racconta il salento</h1>
+                    <p>Per chi sognaiare il salento attraverso gusti che raccontano storie, utilizzando ingredienti autentici, si spinge e genialità</p>
+                </div>
+                <div class="right-image-decor"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-item" onclick="openModal('modal1')">
+                        <h4>Article 1</h4>
+                        <p>Click to read more...</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-item" onclick="openModal('modal2')">
+                        <h4>Article 2</h4>
+                        <p>Click to read more...</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-item" onclick="openModal('modal3')">
+                        <h4>Article 3</h4>
+                        <p>Click to read more...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Article 1</h2>
+            <p>Content for article 1...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Article 2</h2>
+            <p>Content for article 2...</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Article 3</h2>
+            <p>Content for article 3...</p>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Section --><?php
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <p>© 2023 Ulìa Gelateria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    </body>
+
+</html>

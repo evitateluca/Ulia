@@ -206,23 +206,22 @@
 	}
 
 
-	// Page loading animation
 	$(window).on('load', function () {
-		if ($('.cover').length) {
-			$('.cover').parallax({
-				imageSrc: $('.cover').data('image'),
-				zIndex: '1'
-			});
-		}
-
-		$("#preloader").animate({
-			'opacity': '0'
-		}, 600, function () {
-			setTimeout(function () {
-				$("#preloader").css("visibility", "hidden").fadeOut();
-			}, 300);
-		});
-	});
+		// Nascondi il preloader e lo sfondo con un delay
+		setTimeout(function () {
+		  // Nascondere il preloader e lo sfondo con fadeOut
+		  $("#preloader").fadeOut();
+	  
+		  // Riabilitare lo scroll
+		  $('body').css('visibility', 'visible'); // Mostra il corpo della pagina
+		}, 3500); // Tempo di animazione totale (3 secondi)
+	  });
+	  
+  
+  
+  
+  
+  
 
 
 	// Window Resize Mobile Menu Fix
