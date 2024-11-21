@@ -1,11 +1,5 @@
 /*
 
-Lava Landing Page
-
-https://templatemo.com/tm-540-lava-landing-page
-
-*/
-
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -1728,5 +1722,16 @@ footer .sub-footer p {
 
   .blog-item {
       width: 100%; /* Ogni articolo occuperà tutta la larghezza disponibile */
+  }
+}
+
+.blog-excerpt{
+  text-align: left!important;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+}
+@media screen and (max-width: 992px){
+  .blog-item{
+    margin-top: 3rem;
   }
 }
