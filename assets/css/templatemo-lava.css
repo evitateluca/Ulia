@@ -1186,7 +1186,8 @@ footer .sub-footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(145deg, rgba(185, 195, 162, 1) 0%, rgba(74, 117, 141, 1) 45%, rgba(45, 95, 123, 1) 100%);
+  /* background: linear-gradient(145deg, rgba(185, 195, 162, 1) 0%, rgba(74, 117, 141, 1) 45%, rgba(45, 95, 123, 1) 100%); */
+  background: #C3D1B3;
   z-index: -1;
   opacity: 1;
   animation: fadeOutBackground 5s forwards; /* L'animazione del background */
@@ -1734,4 +1735,34 @@ footer .sub-footer p {
   .blog-item{
     margin-top: 3rem;
   }
+}
+
+.blog-card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.blog-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
 }
